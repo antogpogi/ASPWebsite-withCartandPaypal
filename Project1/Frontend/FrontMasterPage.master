@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FrontMasterPage.master.cs" Inherits="FrontMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder></title>
+    <link href="FrontStyleSheet.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="navi">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="nav-item">
+                        <asp:Button CssClass="btn" ID="ButtonHome" runat="server" Text="Home" OnClick="ButtonHome_Click"  />
+                        <asp:Button CssClass="btn" ID="BtnHome" runat="server" Text="Items" OnClick="BtnHome_Click" />
+                        <asp:Button CssClass="btn" ID="BtnCart" runat="server" Text="Cart" OnClick="BtnCart_Click" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="container">
+        <div class="wrapper">
+            <div id="content">
+                        <asp:ContentPlaceHolder id="itemlits" runat="server"></asp:ContentPlaceHolder>
+                        <div style="clear:both;"></div>
+            </div>
+        </div>
+    </div>
+        
+    </form>
+        <div class="container">
+            <div class="wrapper">
+                    <div id="footer">
+                        <asp:ContentPlaceHolder ID ="cfooter" runat="server"></asp:ContentPlaceHolder>
+                    </div>
+                    <hr />
+                    <p>Copyrights Reserve</p>
+                </div>
+        </div>
+</body>
+</html>

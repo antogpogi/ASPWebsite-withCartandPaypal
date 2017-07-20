@@ -1,0 +1,31 @@
+﻿body {
+    background-color:#fff; 
+    font-family: 'Raleway', sans-serif;
+    margin:0px;
+}
+#wrapper{
+    display:block;
+    width:100%;
+}
+#container{
+    margin:0px auto;
+    width:500px;
+    padding:150px;
+}
+#loginform{
+    width:500px; 
+    height:300px; 
+    border:1px solid #808080; 
+    background-color:#625d5d;
+    border-radius:25px;
+}
+h1{
+    color:white;
+}
+p{
+    color:white;
+}
+.btn{
+    
+}
+
